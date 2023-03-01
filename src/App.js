@@ -2,7 +2,9 @@ import { useEffect } from "react";
 import WebFont from "webfontloader";
 import "./App.css";
 import Banner from "./Components/banner/Banner";
+import GameBid from "./Components/gameBid/GameBid";
 import Header from "./Components/head_foot/Header";
+import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
 
 const App = () => {
 
@@ -18,6 +20,8 @@ const App = () => {
     <>
       <Header />
       <Banner />
+      <GameBid />
+      <KnowAboutUs />
     </>
   );
 };

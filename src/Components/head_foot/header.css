@@ -60,17 +60,29 @@ header .bar {
   cursor: pointer;
   position: relative;
 }
-.wholeScreen{
+.wholeScreen {
   position: absolute;
   right: 0;
- width: 100vw;
+  width: 100vw;
   background: var(--darkBlackTransprant);
   height: 100vh;
   display: flex;
   flex-direction: column;
   top: 0;
   z-index: 99;
-  /* display: none; */
+  display: none;
+}
+.wholeScreenShow {
+  display: flex;
+  animation: animateBlackScreen 0.1s ease-in;
+}
+@keyframes animateBlackScreen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .headerSideBar {
@@ -79,13 +91,14 @@ header .bar {
   width: 100%;
   max-width: 500px;
   background: var(--darkBlack);
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   top: 0;
   z-index: 99;
+  transition: 0.8s;
 }
-.ShowSideBar{
+.ShowSideBar {
   right: 0;
 }
 .headerSideBar .logo img {
@@ -180,7 +193,7 @@ header .bar {
   color: var(--commonGreen);
 }
 
-.headerSideBar .sideFoot p{
+.headerSideBar .sideFoot p {
   color: var(--darkBlack);
   font-weight: 700;
 }
@@ -189,15 +202,99 @@ header .bar {
   padding: 20px 40px 20px 40px;
   background: var(--commonGreen);
 }
-.headerSideBar .swordClose:hover{
+.headerSideBar .swordClose:hover {
   color: var(--commonGreen);
 }
-.headerSideBar .swordClose{
+.headerSideBar .swordClose {
   color: var(--white);
   font-size: 2rem;
   position: absolute;
   right: 50px;
   cursor: pointer;
+}
+
+.searchBox {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  background: var(--darkBlackTransprant);
+  top: -100%;
+  transition: 0.3s;
+  left: 0;
+}
+.showSearchBox {
+  top: 0;
+  position: fixed;
+}
+.searchBox > div {
+  height: 100%;
+  position: relative;
+}
+.searchBox .content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+.searchBox form {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.searchBox form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 50px 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  background: transparent;
+  color: var(--white);
+  /* border: 1px solid red; */
+}
+.searchBox form button {
+  color: var(--commonGreen);
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+.showSearchBox form::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: var(--commonGreen);
+  animation: zeroTo100 1s ease-in-out;
+  width: 100%;
+}
+
+@keyframes zeroTo100 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.searchBoxClose:hover {
+  color: var(--commonGreen);
+}
+.searchBoxClose {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--white);
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
 }
 
 @media (max-width: 1024px) {

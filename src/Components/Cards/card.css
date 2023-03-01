@@ -1,0 +1,46 @@
+.bidCard {
+    transition: 1s;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px 20px;
+    gap: 15px;
+    background: linear-gradient(0deg, #0c0e12 0%, rgba(31, 41, 53, 0.685) 100%);
+}
+.bidCard:hover {
+    border: 1px solid var(--commonGreen);
+}
+
+.bidCard .image{
+    width: 40%;
+}
+.bidCard img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.bidCard .content{
+    width: 60%;
+}
+.bidCard .content .creator p:nth-child(3){
+    margin: 0 10px;
+}
+.bidCard .content .creator{
+    width: 100%;
+    margin-top: 10px;
+}
+.bidCard .content .creator img{
+    width: 30px;
+    margin-right: 10px;
+}
+.bidCard .content .createBid{
+    margin-top: 20px;
+    border: 1px solid var(--grayText);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.bidCard .content .createBid h5 span{
+    color: var(--yellow);
+    margin-left: 5px;
+}
