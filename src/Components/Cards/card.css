@@ -44,3 +44,89 @@
     color: var(--yellow);
     margin-left: 5px;
 }
+
+
+.outTeamCard{
+    width: 100%;
+    max-width: 300px;
+    padding: 40px 20px;
+    text-align: center;
+    background: var(--darkGrayLightBlack);
+    border-radius: 15px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+.outTeamCard:hover{
+    transform: translateY(-20px);
+}
+
+.outTeamCard a:hover::after,
+.outTeamCard a:hover::before,
+.outTeamCard:hover::before,
+.outTeamCard:hover::after{
+    background: var(--commonGreen);
+}
+.outTeamCard::after{
+    content: "";
+    position: absolute;
+    background: var(--commonGreenLight);
+    width: 100%;
+    height: 20%;
+    top: 17%;
+    right: -75px;
+    transform: rotate(142deg);
+    transition: .5s;
+}
+.outTeamCard::before{
+    content: "";
+    position: absolute;
+    background: var(--commonGreenLight);
+    width: 100%;
+    height: 20%;
+    top: 17%;
+    left: -75px;
+    transform: rotate(37deg);
+    transition: .5s;
+}
+.outTeamCard a::after{
+    content: "";
+    position: absolute;
+    background: var(--commonGreenLight);
+    width: 100%;
+    height: 1px;
+    top: 60%;
+    right: -90px;
+    transform: rotate(142deg);
+    z-index: -1;
+}
+.outTeamCard a::before{
+    content: "";
+    position: absolute;
+    background: var(--commonGreenLight);
+    width: 100%;
+    height: 1px;
+    top: 60%;
+    left: -90px;
+    transform: rotate(37deg);
+    z-index: -1;
+}
+.outTeamCard a{
+    z-index: 99;
+    width: 70%;
+    position: relative;
+}
+.outTeamCard img{
+    width: 100%;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    z-index: 99;
+}
+.outTeamCard h3{
+    margin-top: 30px;
+}
+.outTeamCard h5{
+    margin-top: 5px;
+    color: var(--commonGreen);
+}

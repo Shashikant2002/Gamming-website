@@ -45,6 +45,7 @@ code {
 :root {
   --white: #fff;
   --commonGreen: #45f882;
+  --commonGreenLight: #45f88157;
   --darkBlackTransprant: rgba(15, 22, 27, 0.9);
   --darkBlack: #0b0e13;
   --yellow: #ffbe18;
@@ -56,4 +57,5 @@ code {
       #10181f 100%
     )
     border-box;
+    --darkGrayLightBlack: #1c242f;
 }

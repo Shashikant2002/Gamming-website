@@ -1,0 +1,10 @@
+.ourTeam {
+  background: url(../../../public/assets/img/team_bg.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.ourTeam .taamCard{
+    margin-top: 50px;
+    gap: 30px;
+}

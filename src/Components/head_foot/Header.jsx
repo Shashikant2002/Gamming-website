@@ -12,6 +12,18 @@ const Header = () => {
   const sideBar = useRef();
   const sideBarFull = useRef();
   const searchBox = useRef();
+  const headerMain = useRef();
+
+  window.onscroll = function() {scrollFunction()};
+  const mainHeader = headerMain.current;
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mainHeader.classList.add('scrollHeader');
+  } else {
+    mainHeader.classList.remove('scrollHeader');
+  }
+}
 
   const togleSideBar = () => {
     const workSideBar = sideBar.current;
@@ -26,7 +38,7 @@ const Header = () => {
 
   return (
     <>
-      <header>
+      <header ref={headerMain}>
         <div className="container flex alignCenter justifySpaceBet">
           <div className="logo">
             <a href="/">
