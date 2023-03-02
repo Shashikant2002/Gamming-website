@@ -1,0 +1,18 @@
+.topTrending{
+    background: var(--darkBlack);
+}
+.topTrending .container{
+    max-width: 1200px;
+}
+.topTrending .headingTrending h2{
+    color: var(--white);
+    gap: 20px;
+}
+
+.topTrending .slider{
+    margin-top: 50px;
+}
+
+.topTrending .slider .react-multi-carousel-track {
+    /* gap: 20px; */
+}

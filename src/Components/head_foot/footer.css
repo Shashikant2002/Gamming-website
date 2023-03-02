@@ -1,0 +1,10 @@
+.footer{
+    background: #0f161b;
+}
+
+.footer .logo img{
+    width: 100%;
+}
+.footer .logo{
+    width: 200px;
+}
