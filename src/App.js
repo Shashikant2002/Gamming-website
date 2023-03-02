@@ -6,6 +6,7 @@ import GameBid from "./Components/gameBid/GameBid";
 import Header from "./Components/head_foot/Header";
 import JoinCommunity from "./Components/joinCommunity/JoinCommunity";
 import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
+import RoadMap from "./Components/roadMap/RoadMap";
 import OurTeam from "./Components/team/OurTeam";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
       <KnowAboutUs />
       <OurTeam />
       <JoinCommunity />
+      <RoadMap />
     </>
   );
 };

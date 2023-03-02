@@ -1,0 +1,133 @@
+.roadMap{
+    background: url(../../../public/assets/img/roadmap_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.roadMap .container{
+    gap: 50px;
+    max-width: 1200px;
+}
+.roadMap .content{
+    width: 45%;
+    /* border: 1px solid red; */
+}
+.roadMap .content a,
+.roadMap .content p{
+    margin-top: 20px;
+}
+.roadMap .content h2{
+    color: var(--white);
+    width: 100%;
+    max-width: 300px;
+}
+.roadMap .cardsSession::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, var(--commonGreen) 0%, #10161c 100%);
+    height: 100%;
+    width: 7px;
+}
+.roadMap .cardsSession{
+    width: 55%;
+    position: relative;
+}
+.roadMap .cardsSession::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    top: 10%;
+    background: var(--commonGreen);
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+.roadMap .content .image img{
+    width: 100%;
+}
+.roadMap .content .image{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+    animation: upDownAnimage 3s linear infinite;
+}
+
+@keyframes upDownAnimage {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+
+.roadMap .cardsSession .card:first-child{
+    margin-top: 0;
+    position: relative;
+}
+
+.roadMap .cardsSession .card{
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 21%);
+    background: var(--darkBlackTransprant);
+    margin-left: 100px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.roadMap .cardsSession .card:hover::after{
+    opacity: 1;
+}
+.roadMap .cardsSession .card::after{
+    transition: .5s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    background-size: cover;
+    right: 20px;
+    top: 0;
+    background: url(../../../public/assets/img/roadmap_img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0;
+}
+.roadMap .cardsSession .card:nth-child(1):after{
+    opacity: 1;
+}
+.roadMap .cardsSession .card h3{
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.roadMap .cardsSession .card p{
+    cursor: pointer;
+    margin-top: 10px;
+    padding-left: 40px;
+    position: relative;
+}
+.roadMap .cardsSession .card .greenDot:hover::before{
+    background: var(--yellow);
+}
+.roadMap .cardsSession .card .greenDot::before{
+    transition: .5s;
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: var(--commonGreen);
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.roadMap .cardsSession .card .notFilled::before{
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background: var(--darkBlack);
+    border: 2px solid var(--grayText);
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}

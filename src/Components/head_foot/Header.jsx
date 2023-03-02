@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./header.css";
 import Nav from "../navigation/Nav";
 import { BiSearchAlt2 } from "react-icons/bi";
@@ -14,16 +14,23 @@ const Header = () => {
   const searchBox = useRef();
   const headerMain = useRef();
 
-  window.onscroll = function() {scrollFunction()};
-  const mainHeader = headerMain.current;
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  },[]);
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    mainHeader.classList.add('scrollHeader');
-  } else {
-    mainHeader.classList.remove('scrollHeader');
+  function scrollFunction() {
+    const mainHeader = headerMain.current;
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      mainHeader.classList.add("scrollHeader");
+    } else {
+      mainHeader.classList.remove("scrollHeader");
+    }
   }
-}
 
   const togleSideBar = () => {
     const workSideBar = sideBar.current;
@@ -131,7 +138,9 @@ function scrollFunction() {
       </header>
       <div className="searchBox" ref={searchBox}>
         <div className="container flex justifyCenter alignCenter">
-          <span onClick={togleSearchBox} className="searchBoxClose"><GiCrossedSwords /></span>
+          <span onClick={togleSearchBox} className="searchBoxClose">
+            <GiCrossedSwords />
+          </span>
           <div className="content">
             <h2 className="textGreenShadow">... SEARCH HERE ...</h2>
             <form action="/">

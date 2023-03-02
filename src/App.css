@@ -47,6 +47,7 @@ a {
   text-decoration: none;
   color: var(--white);
   font-size: 1.1rem;
+  display: inline-block;
 }
 p {
   text-decoration: none;
@@ -139,6 +140,7 @@ img{
 }
 .glButtonFill span {
   padding: 15px 30px;
+  display: inline-block;
 }
 .glButtonFill:hover span::after {
   background: var(--white);
