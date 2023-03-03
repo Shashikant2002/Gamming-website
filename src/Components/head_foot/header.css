@@ -222,7 +222,7 @@ header .bar {
   height: 100vh;
   z-index: 999999;
   background: var(--darkBlackTransprant);
-  top: -100%;
+  top: -200%;
   transition: 0.3s;
   left: 0;
 }
