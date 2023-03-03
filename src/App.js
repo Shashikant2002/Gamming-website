@@ -3,7 +3,7 @@ import WebFont from "webfontloader";
 import "./App.css";
 import Banner from "./Components/banner/Banner";
 import Header from "./Components/head_foot/Header";
-// import GameBid from "./Components/gameBid/GameBid";
+import GameBid from "./Components/gameBid/GameBid";
 // import Footer from "./Components/head_foot/Footer";
 // import JoinCommunity from "./Components/joinCommunity/JoinCommunity";
 // import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
@@ -25,7 +25,7 @@ const App = () => {
     <>
       <Header />
       <Banner />
-      {/* <GameBid /> */}
+      <GameBid />
       {/* <KnowAboutUs /> */}
       {/* <OurTeam /> */}
       {/* <JoinCommunity /> */}

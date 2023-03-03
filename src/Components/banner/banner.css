@@ -76,26 +76,34 @@
 }
 
 @media (max-width: 551px) {
-  .mainBanner .content{
+  .mainBanner .content {
     text-align: center;
     width: 100%;
   }
-  .mainBanner{
+  .mainBanner {
     padding: 250px 0 50px 0;
   }
-  .mainBanner .image{
+  .mainBanner .image {
     margin-top: 30px;
     width: 80%;
   }
-  .mainBanner .content h3:first-child{
+  .mainBanner .content h3:first-child {
     padding: 5px 30px;
     margin-bottom: 20px;
   }
   .mainBanner .glButtonFill {
     margin-top: 25px;
-}
-  .mainBanner .container{
+  }
+  .mainBanner .container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .mainBanner .image img {
+    width: 100%;
+    float: right;
+  }
+  .mainBanner .image {
+    width: 60%;
   }
 }
