@@ -234,7 +234,7 @@ const KnowAboutUs = () => {
         </div>
 
         <div className="mainCrowsel commonSection">
-          <Carousel responsive={responsive} centerMode={true} infinite={true} showDots={true}>
+          <Carousel responsive={responsive} centerMode={window.innerWidth > 380 ? true : false} infinite={true} showDots={true}>
             <div className="slide">
               <div className="image">
                 <img src="assets/img/gallery01.jpg" alt="" />

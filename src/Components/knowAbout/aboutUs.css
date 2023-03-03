@@ -50,6 +50,7 @@
 }
 .tabPower .tabs button img {
   border-radius: 50%;
+  width: 100%;
 }
 .tabPower .tabs button {
   width: 80px;
@@ -253,8 +254,17 @@
   .mainCrowsel .react-multi-carousel-item--active .content h3{
     font-size: 15px;
   }
+  .tabPower .tabs button{
+    width: 50px;
+  }
 }
 @media (max-width: 426px) {
+    .mainCrowsel .react-multi-carousel-item--active .content h3{
+        font-size: 12px;
+    }
+    .mainCrowsel .react-multi-carousel-item--active .content h5{
+        font-size: 10px;
+    }
   .tabPower .allTabls .image {
     width: 100%;
   }
@@ -269,4 +279,8 @@
   .tabPower .allTabls .tab {
     gap: 0;
   }
+}
+
+@media (max-width: 380px) {
+    
 }
