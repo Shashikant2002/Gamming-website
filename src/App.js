@@ -25,13 +25,13 @@ const App = () => {
     <>
       <Header />
       <Banner />
-      <GameBid />
-      <KnowAboutUs />
-      <OurTeam />
-      <JoinCommunity />
-      <RoadMap />
-      <TopTrending />
-      <Footer />
+      {/* <GameBid /> */}
+      {/* <KnowAboutUs /> */}
+      {/* <OurTeam /> */}
+      {/* <JoinCommunity /> */}
+      {/* <RoadMap /> */}
+      {/* <TopTrending /> */}
+      {/* <Footer /> */}
     </>
   );
 };

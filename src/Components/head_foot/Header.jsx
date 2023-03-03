@@ -6,19 +6,20 @@ import { TbEditCircle } from "react-icons/tb";
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { BsTwitter } from "react-icons/bs";
 import { GiCrossedSwords } from "react-icons/gi";
-import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaBars } from "react-icons/fa";
 
 const Header = () => {
   const sideBar = useRef();
   const sideBarFull = useRef();
   const searchBox = useRef();
   const headerMain = useRef();
+  const overLayBackgroundPhone = useRef();
 
   useEffect(() => {
     window.onscroll = function () {
       scrollFunction();
     };
-  },[]);
+  }, []);
 
   function scrollFunction() {
     const mainHeader = headerMain.current;
@@ -30,6 +31,12 @@ const Header = () => {
     } else {
       mainHeader.classList.remove("scrollHeader");
     }
+  }
+
+  const NavInPhone = () => {
+    const navBackGround = overLayBackgroundPhone.current;
+    navBackGround.classList.toggle('overLayBackgroundPhoneShow');
+    document.querySelector('nav').classList.toggle('showNavInPhone');
   }
 
   const togleSideBar = () => {
@@ -52,7 +59,8 @@ const Header = () => {
               <img src="assets/img/logo.png" alt="" />
             </a>
           </div>
-          <Nav />
+          <div onClick={NavInPhone} ref={overLayBackgroundPhone} className="overLayBackgroundPhone"></div>
+          <Nav closeFunction={NavInPhone} />
           <div className="menues flex alignCenter">
             <span onClick={togleSearchBox} className="search flex alignCenter">
               <BiSearchAlt2 />
@@ -60,6 +68,9 @@ const Header = () => {
             <a className="glButtonBorder flex alignCenter" href="/">
               <TbEditCircle /> ~Sign In
             </a>
+            <div onClick={NavInPhone} className="phoneMenu flex alignCenter">
+              <FaBars />
+            </div>
             <div onClick={() => togleSideBar()} className="bar">
               <span></span>
               <span></span>

@@ -74,3 +74,27 @@
   right: 0;
   background: var(--commonGreen);
 }
+
+@media (max-width: 551px) {
+  .mainBanner .content{
+    text-align: center;
+  }
+  .mainBanner{
+    padding: 250px 0 50px 0;
+  }
+  .mainBanner .image{
+    margin-top: 30px;
+    width: 70%;
+  }
+  .mainBanner .content h3:first-child{
+    padding: 5px 30px;
+    margin-bottom: 20px;
+  }
+  .mainBanner .glButtonFill {
+    margin-top: 25px;
+}
+  .mainBanner .container{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
