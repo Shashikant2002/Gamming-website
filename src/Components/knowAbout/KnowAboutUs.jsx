@@ -39,7 +39,7 @@ const KnowAboutUs = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -58,7 +58,7 @@ const KnowAboutUs = () => {
           </div>
 
           <div className="tabPower">
-            <div className="tabs flex justifyCenter">
+            <div className="tabs flex justifyCenter flexWrap">
               <button
                 className="tabButtonsKnowAbout"
                 onClick={() => tabChangeButtons(0)}

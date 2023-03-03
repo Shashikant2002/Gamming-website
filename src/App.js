@@ -6,7 +6,7 @@ import Header from "./Components/head_foot/Header";
 import GameBid from "./Components/gameBid/GameBid";
 // import Footer from "./Components/head_foot/Footer";
 // import JoinCommunity from "./Components/joinCommunity/JoinCommunity";
-// import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
+import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
 // import RoadMap from "./Components/roadMap/RoadMap";
 // import OurTeam from "./Components/team/OurTeam";
 // import TopTrending from "./Components/topTrending/TopTrending";
@@ -26,7 +26,7 @@ const App = () => {
       <Header />
       <Banner />
       <GameBid />
-      {/* <KnowAboutUs /> */}
+      <KnowAboutUs />
       {/* <OurTeam /> */}
       {/* <JoinCommunity /> */}
       {/* <RoadMap /> */}
