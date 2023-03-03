@@ -1,15 +1,21 @@
 import React from "react";
 import "./Nav.css";
 import { GiCrossedSwords } from "react-icons/gi";
+import { TbEditCircle } from "react-icons/tb";
 
-const Nav = ({closeFunction}) => {
+const Nav = ({ closeFunction }) => {
   return (
     <>
       <nav>
-      <span onClick={closeFunction} className="phoneNavClose"> <GiCrossedSwords /></span>
+        <span onClick={closeFunction} className="phoneNavClose">
+          {" "}
+          <GiCrossedSwords />
+        </span>
         <ul className="flex navBar">
           <li>
-            <a className="active" href="/">HOME</a>
+            <a className="active" href="/">
+              HOME
+            </a>
           </li>
           <li>
             <a href="/">ABOUT US</a>
@@ -27,6 +33,9 @@ const Nav = ({closeFunction}) => {
             <a href="/">CONTACT US</a>
           </li>
         </ul>
+        <a className="glButtonBorder flex alignCenter" href="/">
+          <TbEditCircle /> ~Sign In
+        </a>
       </nav>
     </>
   );

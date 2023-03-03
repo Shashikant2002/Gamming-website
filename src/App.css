@@ -378,3 +378,71 @@ img {
     color: var(--grayText);
   }
 }
+
+@media (max-width: 375px) {
+  input{
+    font-size: 1rem !important;
+  }
+  a {
+    font-size: .8rem;
+  }
+  p {
+    font-size: .8rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    color: var(--white);
+  }
+  h4{
+    color: var(--white);
+    font-size: 1.1rem;
+  }
+  h5 {
+    font-size: .9rem;
+    color: var(--white);
+  }
+  small{
+    font-size: .8rem;
+    color: var(--grayText);
+  }
+}
+
+@media (max-width: 325px) {
+  input{
+    font-size: 1rem !important;
+  }
+  a {
+    font-size: .5rem;
+  }
+  p {
+    font-size: .7rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: .8rem;
+    color: var(--white);
+  }
+  h4{
+    color: var(--white);
+    font-size: 1.1rem;
+  }
+  h5 {
+    font-size: .9rem;
+    color: var(--white);
+  }
+  small{
+    font-size: .8rem;
+    color: var(--grayText);
+  }
+}

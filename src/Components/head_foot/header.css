@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 9999;
 }
-.scrollHeader{
+.scrollHeader {
   background: var(--darkBlackTransprant);
 }
 .logo img {
@@ -301,14 +301,17 @@ header .bar {
   right: 20px;
 }
 
+header .phoneMenu {
+  display: none;
+}
+.phoneNavClose {
+  display: none;
+}
+.overLayBackgroundPhone {
+  display: none;
+}
 
-header .phoneMenu{
-  display: none;
-}
-.phoneNavClose{
-  display: none;
-}
-.overLayBackgroundPhone{
+header nav .glButtonBorder {
   display: none;
 }
 
@@ -322,11 +325,11 @@ header .phoneMenu{
     width: 120px;
   }
 
-  header .bar{
+  header .bar {
     display: none;
   }
 
-  header .phoneMenu{
+  header .phoneMenu {
     display: flex;
     font-size: 2rem;
     color: var(--commonGreen);
@@ -336,14 +339,14 @@ header .phoneMenu{
     cursor: pointer;
   }
 
-  nav ul{
+  nav ul {
     flex-direction: column;
     margin-top: 20%;
   }
-  nav ul li{
+  nav ul li {
     margin-top: 20px;
   }
-  nav{
+  nav {
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -353,18 +356,18 @@ header .phoneMenu{
     text-align: center;
     background: var(--darkBlack);
     z-index: 9999;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  .showNavInPhone{
+  .showNavInPhone {
     right: 0;
   }
 
-  .phoneNavClose:hover{
+  .phoneNavClose:hover {
     color: var(--commonGreen);
     cursor: pointer;
   }
-  .phoneNavClose{
+  .phoneNavClose {
     display: block;
     color: var(--white);
     position: absolute;
@@ -372,7 +375,7 @@ header .phoneMenu{
     right: 5%;
     font-size: 2rem;
   }
-  .overLayBackgroundPhone{
+  .overLayBackgroundPhone {
     display: none;
     position: absolute;
     top: 0;
@@ -381,8 +384,24 @@ header .phoneMenu{
     height: 100vh;
     background: var(--darkBlackTransprant);
   }
-  .overLayBackgroundPhoneShow{
+  .overLayBackgroundPhoneShow {
     display: block;
     animation: animateBlackScreen 0.1s ease-in;
   }
+}
+
+@media (max-width: 375px) {
+  header .menues .glButtonBorder {
+    display: none;
+  }
+  header .menues .search {
+    margin-right: 6px;
+  }
+  header nav .glButtonBorder{
+    display: inline-block;
+    margin-top: 20px;
+  }
+  .glButtonBorder {
+    padding: 12px 31px;
+}
 }
