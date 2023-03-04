@@ -230,7 +230,7 @@ const KnowAboutUs = () => {
                 </div>
               </div>
             </div>
-          </div>res
+          </div>
         </div>
 
         <div className="mainCrowsel commonSection">
