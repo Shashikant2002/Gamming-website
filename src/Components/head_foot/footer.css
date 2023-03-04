@@ -36,7 +36,7 @@
   margin-top: 15px;
 }
 .footer .col:nth-child(1) {
-  width: 40%;
+  width: 37%;
   padding-right: 20px;
   /* border: 1px solid red; */
 }
@@ -51,7 +51,7 @@
 }
 
 .footer .col:nth-child(4) {
-  width: 30%;
+  width: 25%;
   /* border: 1px solid red; */
 }
 
