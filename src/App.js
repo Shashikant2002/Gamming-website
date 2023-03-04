@@ -4,12 +4,12 @@ import "./App.css";
 import Banner from "./Components/banner/Banner";
 import Header from "./Components/head_foot/Header";
 import GameBid from "./Components/gameBid/GameBid";
-// import Footer from "./Components/head_foot/Footer";
+import Footer from "./Components/head_foot/Footer";
 import JoinCommunity from "./Components/joinCommunity/JoinCommunity";
 import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
-// import RoadMap from "./Components/roadMap/RoadMap";
+import RoadMap from "./Components/roadMap/RoadMap";
 import OurTeam from "./Components/team/OurTeam";
-// import TopTrending from "./Components/topTrending/TopTrending";
+import TopTrending from "./Components/topTrending/TopTrending";
 
 const App = () => {
 
@@ -29,9 +29,9 @@ const App = () => {
       <KnowAboutUs />
       <OurTeam />
       <JoinCommunity />
-      {/* <RoadMap /> */}
-      {/* <TopTrending /> */}
-      {/* <Footer /> */}
+      <RoadMap />
+      <TopTrending />
+      <Footer />
     </>
   );
 };

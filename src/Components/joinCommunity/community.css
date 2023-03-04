@@ -81,3 +81,10 @@
   font-size: 3rem;
   cursor: pointer;
 }
+
+
+@media (max-width: 551px) {
+  .ourCommunity .ifameVideo .frame {  
+    height: 200px;
+}
+}

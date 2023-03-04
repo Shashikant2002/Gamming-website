@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer commonSection">
-        <div className="container flex">
+        <div className="container flex flexWrap">
           <div className="col">
             <div className="logo">
               <img src="assets/img/logo.png" alt="" />

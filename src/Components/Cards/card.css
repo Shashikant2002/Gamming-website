@@ -8,6 +8,7 @@
   gap: 15px;
   background: linear-gradient(0deg, #0c0e12 0%, rgba(31, 41, 53, 0.685) 100%);
 }
+
 .bidCard:hover {
   border: 1px solid var(--commonGreen);
 }
@@ -15,6 +16,7 @@
 .bidCard .image {
   width: 40%;
 }
+
 .bidCard img {
   border-radius: 10px;
   width: 100%;
@@ -23,23 +25,28 @@
 .bidCard .content {
   width: 60%;
 }
+
 .bidCard .content .creator p:nth-child(3) {
   margin: 0 10px;
 }
+
 .bidCard .content .creator {
   width: 100%;
   margin-top: 10px;
 }
+
 .bidCard .content .creator img {
   width: 30px;
   margin-right: 10px;
 }
+
 .bidCard .content .createBid {
   margin-top: 20px;
   border: 1px solid var(--grayText);
   padding: 15px 20px;
   border-radius: 5px;
 }
+
 .bidCard .content .createBid h5 span {
   color: var(--yellow);
   margin-left: 5px;
@@ -57,6 +64,7 @@
   position: relative;
   transition: 0.5s;
 }
+
 .outTeamCard:hover {
   transform: translateY(-20px);
 }
@@ -67,6 +75,7 @@
 .outTeamCard:hover::after {
   background: var(--commonGreen);
 }
+
 .outTeamCard::after {
   content: "";
   position: absolute;
@@ -78,6 +87,7 @@
   transform: rotate(142deg);
   transition: 0.5s;
 }
+
 .outTeamCard::before {
   content: "";
   position: absolute;
@@ -89,6 +99,7 @@
   transform: rotate(37deg);
   transition: 0.5s;
 }
+
 .outTeamCard a::after {
   content: "";
   position: absolute;
@@ -100,6 +111,7 @@
   transform: rotate(142deg);
   z-index: -1;
 }
+
 .outTeamCard a::before {
   content: "";
   position: absolute;
@@ -111,20 +123,24 @@
   transform: rotate(37deg);
   z-index: -1;
 }
+
 .outTeamCard a {
   z-index: 99;
   width: 70%;
   position: relative;
 }
+
 .outTeamCard img {
   width: 100%;
   border: 3px solid var(--white);
   border-radius: 50%;
   z-index: 99;
 }
+
 .outTeamCard h3 {
   margin-top: 30px;
 }
+
 .outTeamCard h5 {
   margin-top: 5px;
   color: var(--commonGreen);
@@ -135,29 +151,36 @@
   max-width: 400px;
   padding: 0 15px;
 }
+
 .nftCard .mainCard {
   padding: 30px 20px;
   background: #1c252f;
   border-radius: 10px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
 }
+
 .nftCard .mainCard .cart svg:hover {
   color: var(--commonGreen);
 }
+
 .nftCard .mainCard .content a:hover {
   color: var(--commonGreen);
 }
+
 .nftCard .mainCard .content {
   margin-left: 10px;
 }
+
 .nftCard .mainCard .cart svg {
   cursor: pointer;
   color: var(--white);
   font-size: 1.7rem;
 }
+
 .nftCard .mainCard .image img {
   width: 100%;
 }
+
 .nftCard .mainCard .image {
   margin-top: 20px;
   width: 100%;
@@ -169,12 +192,15 @@
   margin-top: 20px;
   padding-right: 30px;
 }
+
 .nftCard .mainCard .footContent .lastprice p {
   margin-bottom: 5px;
 }
+
 .nftCard .mainCard .footContent h4 {
   gap: 8px;
 }
+
 .nftCard .mainCard .footContent h4 span,
 .nftCard .mainCard .footContent h4 svg {
   color: var(--yellow);
@@ -184,17 +210,31 @@
   .bidCard .content .createBid {
     padding: 3px 3px 3px 13px;
   }
+
+  .nftCard {
+    padding: 0 0px;
+  }
+
+  .nftCard .mainCard .footContent {
+    padding-right: 5px;
+    margin-top: 5px;
+  }
+  .nftCard .mainCard{
+    padding: 30px 15px;
+  }
 }
 
 @media (max-width: 400px) {
   .bidCard {
     flex-direction: column;
   }
+
   .bidCard .content {
     width: 100%;
     text-align: center;
   }
-  .bidCard .content .creator{
+
+  .bidCard .content .creator {
     justify-content: center;
     margin: 10px 0;
   }

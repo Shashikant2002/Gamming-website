@@ -356,7 +356,7 @@ img {
     font-size: 1rem;
   }
   p {
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 20px;
   }
   h1 {
@@ -391,7 +391,7 @@ img {
     font-size: 1rem;
   }
   p {
-    font-size: .8rem;
+    font-size: 1rem;
   }
   h1 {
     font-size: 2.5rem;
@@ -422,10 +422,10 @@ img {
     font-size: 1rem !important;
   }
   a {
-    font-size: .9rem;
+    font-size: 1rem;
   }
   p {
-    font-size: .7rem;
+    font-size: 1rem;
   }
   h1 {
     font-size: 2.3rem;
