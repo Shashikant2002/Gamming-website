@@ -10,8 +10,6 @@ const GameBid = () => {
                 <BidCard price={"1.002"} creatorName={"Alax Max"} title={"WOLF GAMING ART"} image={"assets/img/bidimg_1.jpg"} />
                 <BidCard price={"1.002"} creatorName={"Alax Max"} title={"FOREST PRINCESS"} image={"assets/img/bidimg_2.jpg"} />
                 <BidCard price={"1.002"} creatorName={"Alax Max"} title={"GIRL FIREFLY ART"} image={"assets/img/bidimg_3.jpg"} />
-                <BidCard price={"1.002"} creatorName={"Alax Max"} title={"GIRL FIREFLY ART"} image={"assets/img/bidimg_2.jpg"} />
-                <BidCard price={"1.002"} creatorName={"Alax Max"} title={"GIRL FIREFLY ART"} image={"assets/img/bidimg_1.jpg"} />
             </div>
         </section>
     </>

@@ -10,28 +10,53 @@ import KnowAboutUs from "./Components/knowAbout/KnowAboutUs";
 import RoadMap from "./Components/roadMap/RoadMap";
 import OurTeam from "./Components/team/OurTeam";
 import TopTrending from "./Components/topTrending/TopTrending";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CommonPageBanner from "./Components/commonPageBanner/CommonPageBanner";
+import PowerFulSer from "./Components/powerFulService/PowerFulSer";
 
 const App = () => {
-
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ["Tilt Neon","Roboto", "Droid Sans", "Chilanka"],
+        families: ["Tilt Neon", "Roboto", "Droid Sans", "Chilanka"],
       },
     });
   }, []);
 
   return (
     <>
-      <Header />
-      <Banner />
-      <GameBid />
-      <KnowAboutUs />
-      <OurTeam />
-      <JoinCommunity />
-      <RoadMap />
-      <TopTrending />
+      <BrowserRouter>
+          <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner />
+                <GameBid />
+                <KnowAboutUs />
+                <OurTeam />
+                <JoinCommunity />
+                <RoadMap />
+                <TopTrending />
+              </>
+            }
+          />
+
+          <Route
+            path="/aboutus"
+            element={
+              <>
+                <CommonPageBanner title={"ABOUT US"} img={"assets/img/breadcrumb_img01.png"} />
+                <PowerFulSer />
+                <OurTeam />
+              </>
+            }
+          />
+          
+        </Routes>
       <Footer />
+      </BrowserRouter>
     </>
   );
 };

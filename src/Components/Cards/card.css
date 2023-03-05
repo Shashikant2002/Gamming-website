@@ -54,7 +54,7 @@
 
 .outTeamCard {
   width: 100%;
-  max-width: 300px;
+  max-width: 260px;
   padding: 40px 20px;
   text-align: center;
   background: var(--darkGrayLightBlack);

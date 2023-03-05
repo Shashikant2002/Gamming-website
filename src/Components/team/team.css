@@ -3,6 +3,9 @@
   background-size: cover;
   background-position: top;
 }
+.ourTeam .container{
+  max-width: 1200px;
+}
 
 .ourTeam .taamCard{
     margin-top: 50px;

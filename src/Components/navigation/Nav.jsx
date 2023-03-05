@@ -2,6 +2,7 @@ import React from "react";
 import "./Nav.css";
 import { GiCrossedSwords } from "react-icons/gi";
 import { TbEditCircle } from "react-icons/tb";
+import { NavLink } from "react-router-dom";
 
 const Nav = ({ closeFunction }) => {
   return (
@@ -13,12 +14,12 @@ const Nav = ({ closeFunction }) => {
         </span>
         <ul className="flex navBar">
           <li>
-            <a className="active" href="/">
+            <NavLink to="/">
               HOME
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/">ABOUT US</a>
+            <NavLink to="/aboutus">ABOUT US</NavLink>
           </li>
           <li>
             <a href="/">TOURNAMENT</a>
