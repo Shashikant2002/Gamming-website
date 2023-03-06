@@ -56,3 +56,20 @@
     right: 10px;
     transform: translateY(-50%);
 }
+
+@media (max-width: 770px) {
+    .pageBanner .image {
+        width: 290px;
+    }
+}
+
+@media (max-width: 551px) {
+    .pageBanner .image {
+        width: 290px;
+        margin-top: 20px;
+    }
+    .pageBanner .container{
+        flex-direction: column;
+        text-align: center;
+    }
+}

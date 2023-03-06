@@ -326,6 +326,10 @@ img {
     font-size: .9rem;
     color: var(--white);
   }
+  h6{
+    font-size: 2rem;
+  }
+
   small{
     font-size: .8rem;
     color: var(--grayText);
@@ -379,6 +383,9 @@ img {
   h5 {
     font-size: .9rem;
     color: var(--white);
+  }
+    h6{
+    font-size: 1.6rem;
   }
   small{
     font-size: .8rem;

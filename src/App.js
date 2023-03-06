@@ -13,6 +13,7 @@ import TopTrending from "./Components/topTrending/TopTrending";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CommonPageBanner from "./Components/commonPageBanner/CommonPageBanner";
 import PowerFulSer from "./Components/powerFulService/PowerFulSer";
+import WhoWeAre from "./Components/whoWeAre/WhoWeAre";
 
 const App = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const App = () => {
             element={
               <>
                 <CommonPageBanner title={"ABOUT US"} img={"assets/img/breadcrumb_img01.png"} />
+                <WhoWeAre />
                 <PowerFulSer />
                 <OurTeam />
               </>
