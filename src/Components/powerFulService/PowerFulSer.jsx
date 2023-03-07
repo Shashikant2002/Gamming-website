@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Heading from "../heading/Heading";
 import "./powerfulSer.css";
@@ -8,6 +8,7 @@ import { TbCurrencyEthereum } from "react-icons/tb";
 import { AiFillSetting } from "react-icons/ai";
 
 const PowerFulSer = () => {
+  const [pathImg, setPathImg] = useState("/")
   const powerfunServicesImg = useRef();
 
   const allImages = [
@@ -16,14 +17,11 @@ const PowerFulSer = () => {
     "assets/img/services_img03.jpg",
     "assets/img/services_img04.jpg",
   ];
-  const path = ["/", "/AboutUS", "/aboutus", "/"];
+  const path = ["/", "/aboutus", "/contactus", "/"];
   const changeImageOnHover = (index) => {
     const imgSource = powerfunServicesImg.current;
-    const powerfunServicesAnchor = document.querySelector(
-      ".powerfunServicesAnchor"
-    );
     imgSource.src = allImages[index];
-    powerfunServicesAnchor.href = path[index];
+    setPathImg(path[index]);
   };
 
   return (
@@ -72,7 +70,7 @@ const PowerFulSer = () => {
           </div>
           <div className="image">
             <span className="arrowPower">
-              <Link className="powerfunServicesAnchor" to="/">
+              <Link className="powerfunServicesAnchor" to={pathImg}>
                 ⇉
               </Link>
             </span>

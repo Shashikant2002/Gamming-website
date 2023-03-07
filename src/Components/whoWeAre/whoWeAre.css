@@ -71,7 +71,26 @@
 .whoWeAre .mainContent .image img {
   width: 100%;
 }
+.whoWeAre .mainContent .image .img_2  .dots svg{
+  /* animation: rightLeft 5s linear infinite; */
+}
+@keyframes rightLeft {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(10px);}
+  100%{transform: translateY(0px);}
+}
+.whoWeAre .mainContent .image .img_2  .dots{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--white);
+  font-size: 2rem;
+  background: var(--darkGrayLightBlack);
+  padding: 15px 20px;
+}
 .whoWeAre .mainContent .image .img_2 {
+  position: relative;
   width: 45%;
 }
 .whoWeAre .mainContent .image .img_1 {
@@ -141,6 +160,9 @@
     .whoWeAre .mainContent .image{
         justify-content: center;
     }
+    .whoWeAre .mainContent .image .img_2  .dots{
+      padding: 10px 15px;
+    }
 }
 
 @media (max-width: 551px) {
@@ -158,6 +180,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .whoWeAre .mainContent .image .img_2  .dots{
+      padding: 5px 10px;
     }
 }
 @media (max-width: 426px) {

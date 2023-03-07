@@ -14,24 +14,24 @@ const Nav = ({ closeFunction }) => {
         </span>
         <ul className="flex navBar">
           <li>
-            <NavLink to="/">
+            <NavLink onClick={closeFunction} to="/">
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutus">ABOUT US</NavLink>
+            <NavLink onClick={closeFunction} to="/aboutus">ABOUT US</NavLink>
           </li>
           <li>
-            <a href="/">TOURNAMENT</a>
+            <a onClick={closeFunction} href="/">TOURNAMENT</a>
           </li>
           <li>
-            <a href="/">PAGES</a>
+            <a onClick={closeFunction} href="/">PAGES</a>
           </li>
           <li>
-            <a href="/">NEWS</a>
+            <a onClick={closeFunction} href="/">NEWS</a>
           </li>
           <li>
-            <a href="/">CONTACT US</a>
+            <NavLink onClick={closeFunction} to="/contactus">CONTACT US</NavLink>
           </li>
         </ul>
         <a className="glButtonBorder flex alignCenter" href="/">

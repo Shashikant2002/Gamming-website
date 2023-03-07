@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.1s;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Tilt Neon", cursive;
   max-width: 100vw;
   overflow-x: hidden;
 }
+textarea,
 button {
   font-family: "Tilt Neon", cursive;
   cursor: pointer;
@@ -40,6 +42,9 @@ li {
 }
 .justifySpaceBet {
   justify-content: space-between;
+}
+.textAlignCenter{
+  text-align: center;
 }
 
 .flexWrap {
@@ -357,7 +362,7 @@ img {
     left: -5px;
   }
   input{
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
   a {
     font-size: 1rem;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./whoWeAre.css";
+import { TbGridDots } from 'react-icons/tb';
 
 const WhoWeAre = () => {
   return (
@@ -34,6 +35,11 @@ const WhoWeAre = () => {
                 <div className="sideGreen"></div>
               </div>
               <div className="img_2">
+                <div className="dots">
+                  <TbGridDots />
+                  <TbGridDots />
+                  <TbGridDots />
+                </div>
                 <img src="assets/img/mask_img02.jpg" alt="" />
               </div>
             </div>

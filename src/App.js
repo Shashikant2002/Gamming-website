@@ -14,6 +14,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CommonPageBanner from "./Components/commonPageBanner/CommonPageBanner";
 import PowerFulSer from "./Components/powerFulService/PowerFulSer";
 import WhoWeAre from "./Components/whoWeAre/WhoWeAre";
+import Map from "./Components/map/Map";
+import ContactUsForm from "./Components/contactUsForm/ContactUsForm";
 
 const App = () => {
   useEffect(() => {
@@ -27,7 +29,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-          <Header />
+        <Header />
         <Routes>
           <Route
             path="/"
@@ -48,16 +50,29 @@ const App = () => {
             path="/aboutus"
             element={
               <>
-                <CommonPageBanner title={"ABOUT US"} img={"assets/img/breadcrumb_img01.png"} />
+                <CommonPageBanner
+                  title={"ABOUT US"}
+                  img={"assets/img/breadcrumb_img01.png"}
+                />
                 <WhoWeAre />
                 <PowerFulSer />
                 <OurTeam />
               </>
             }
           />
-          
+
+          <Route
+            path="/contactus"
+            element={
+              <>
+                <CommonPageBanner title={"CONTACT US"} />
+                <ContactUsForm />
+                <Map />
+              </>
+            }
+          />
         </Routes>
-      <Footer />
+        <Footer />
       </BrowserRouter>
     </>
   );

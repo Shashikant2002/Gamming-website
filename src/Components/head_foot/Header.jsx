@@ -7,6 +7,7 @@ import { RiSendPlane2Fill } from "react-icons/ri";
 import { BsTwitter } from "react-icons/bs";
 import { GiCrossedSwords } from "react-icons/gi";
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const sideBar = useRef();
@@ -37,6 +38,7 @@ const Header = () => {
     const navBackGround = overLayBackgroundPhone.current;
     navBackGround.classList.toggle('overLayBackgroundPhoneShow');
     document.querySelector('nav').classList.toggle('showNavInPhone');
+    window.scrollTo(0, 0);
   }
 
   const togleSideBar = () => {
@@ -55,9 +57,9 @@ const Header = () => {
       <header ref={headerMain}>
         <div className="container flex alignCenter justifySpaceBet">
           <div className="logo">
-            <a href="/">
+            <Link to="/">
               <img src="assets/img/logo.png" alt="" />
-            </a>
+            </Link>
           </div>
           <div onClick={NavInPhone} ref={overLayBackgroundPhone} className="overLayBackgroundPhone"></div>
           <Nav closeFunction={NavInPhone} />
